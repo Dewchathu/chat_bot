@@ -1,0 +1,70 @@
+{
+  "functions": {
+    "message_probability": {
+      "arguments": [
+        "user_message",
+        "recognised_words",
+        {
+          "name": "single_response",
+          "default": false
+        },
+        {
+          "name": "required_words",
+          "default": []
+        }
+      ],
+      "code": "... (code for message_probability function) ..."
+    },
+    "check_all_messages": {
+      "arguments": ["message"],
+      "code": "... (code for check_all_messages function) ..."
+    },
+    "get_response": {
+      "arguments": ["user_input"],
+      "code": "... (code for get_response function) ..."
+    }
+  },
+  "responses": {
+     "greeting": {
+    "keywords": ["hello", "hi", "sup", "hey", "heyo"],
+    "response": "Hello!"
+  },
+  "how_are_you": {
+    "keywords": ["how", "are", "you", "doing"],
+    "required_words": ["how"],
+    "response": "I'm doing fine, and you?"
+  },
+  "compliment": {
+    "keywords": ["you", "are", "awesome", "great", "fantastic"],
+    "response": "Thank you! That means a lot to me."
+  },
+  "goodbye": {
+    "keywords": ["goodbye", "bye", "see you later", "later"],
+    "response": "See you later! Have a great day!"
+  },
+  "weather": {
+    "keywords": ["weather", "forecast", "raining", "sunny"],
+    "response": "I don't have access to real-time weather information, but I can search the web for you."
+},
+  "help": {
+    "keywords": ["help", "need", "assistance"],
+    "response": "I'm happy to help! What can I do for you today?"
+  },
+  "what_can_you_do": {
+    "keywords": ["what", "can", "you", "do", "capabilities"],
+    "response": "I can answer your questions to the best of my ability, understand simple requests, and even have casual conversations. How can I help you today?"
+  },
+  "who_are_you": {
+    "keywords": ["who", "are", "you"],
+    "response": "I'm a chatbot under development, still learning and growing. It's nice to meet you!"
+  },
+  "disagree": {
+    "keywords": ["disagree", "not", "think", "so"],
+    "response": "That's an interesting perspective. Can you tell me more about why you disagree?"
+  },
+  "joke": {
+    "keywords": ["joke", "funny", "laugh"],
+    "response": "Why did the scarecrow win an award? Because he was outstanding in his field! "
+  }
+  }
+}
